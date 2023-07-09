@@ -1,88 +1,54 @@
-```markdown
 # Threads API
 
-An API for interacting with Threads, a text-based app by Meta.
+This is a Flask application that provides several routes for fetching user information and data from the Threads API. The application exposes the following routes:
 
-![Threads Logo](threads-logo.png)
+## Route 1: Fetch userid by username
 
-## Routes
+- **Endpoint**: `/userid/<username>`
+- **Method**: GET
+- **Description**: Fetches the user ID by providing the username.
+- **Parameters**:
+  - `<username>`: The username of the user.
+- **Response**: Returns a JSON object with the `userid` of the user.
+- **Example**: `http://localhost:3000/userid/johndoe`
 
-- [Fetch userid by username](#fetch-userid-by-username)
-- [Fetch user profile by userid](#fetch-user-profile-by-userid)
-- [Fetch threads or posts of userid](#fetch-threads-or-posts-of-userid)
+## Route 2: Fetch user profile by userid
 
-### Fetch userid by username
-```
+- **Endpoint**: `/userprofile/<userid>`
+- **Method**: GET
+- **Description**: Fetches the user profile by providing the user ID.
+- **Parameters**:
+  - `<userid>`: The ID of the user.
+- **Response**: Returns the user profile data as a JSON object.
+- **Example**: `http://localhost:3000/userprofile/12345`
 
-GET /userid/:username
+## Route 3: Fetch threads or posts of userid
 
-```
+- **Endpoint**: `/threads/<userid>`
+- **Method**: GET
+- **Description**: Fetches the threads or posts of a user by providing the user ID.
+- **Parameters**:
+  - `<userid>`: The ID of the user.
+- **Response**: Returns the threads or posts data as a JSON object.
+- **Example**: `http://localhost:3000/threads/12345`
 
-Fetches the userid associated with the provided username.
+## How to Run
 
-### Fetch user profile by userid
-
-```
-
-GET /userprofile/:userid
-
-```
-
-Fetches the user profile information for the provided userid.
-
-### Fetch threads or posts of userid
-
-```
-
-GET /threads/:userid
-
-````
-
-Fetches the threads or posts associated with the provided userid.
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/threads-api.git
-````
-
-2. Install the dependencies:
-
-   ```bash
-   pip install -r requirements.txt
+1. Make sure you have Python installed (version 3.6 or later).
+2. Install the required dependencies by running the following command:
    ```
-
-3. Start the server:
-
-   ```bash
+   pip install flask requests
+   ```
+3. Save the program code to a file named `app.py`.
+4. Open a terminal or command prompt and navigate to the directory where the `app.py` file is located.
+5. Run the application by executing the following command:
+   ```
    python app.py
    ```
+6. The server will start running on `http://localhost:3000`.
 
-## Usage
+Note: You can change the `port` variable in the code to use a different port if needed.
 
-Make requests to the API using the provided routes and endpoints.
+## Error Handling
 
-For example, to fetch the userid by username:
-
-```bash
-GET http://localhost:3000/userid/johndoe
-```
-
-The response will contain the userid associated with the provided username.
-
-## Contributing
-
-Contributions are welcome! If you have any improvements or suggestions, feel free to open an issue or submit a pull request.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-```
-
-Make sure to replace `threads-logo.png` with the actual Threads logo file and update the relevant sections with your own information before copying it to your README file.
-```
+If any error occurs during the API requests or processing, the server will return a JSON response with an `"error"` key and an appropriate error message. The HTTP status code will be 500 (Internal Server Error).
