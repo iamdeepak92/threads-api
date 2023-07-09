@@ -52,3 +52,15 @@ Note: You can change the `port` variable in the code to use a different port if 
 ## Error Handling
 
 If any error occurs during the API requests or processing, the server will return a JSON response with an `"error"` key and an appropriate error message. The HTTP status code will be 500 (Internal Server Error).
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create an issue or submit a pull request.
+
+## License
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
