@@ -1,27 +1,9 @@
 ```markdown
-<h1 align="center">
-  <img src="threads-logo.png" alt="Threads Logo" width="200">
-  <br>
-  Threads API
-</h1>
+# Threads API
 
-<p align="center">
-  <strong>An API for interacting with Threads, a text-based app by Meta.</strong>
-</p>
+An API for interacting with Threads, a text-based app by Meta.
 
-<p align="center">
-  <a href="#routes">Routes</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#contributing">Contributing</a> •
-  <a href="#license">License</a>
-</p>
-
-<p align="center">
-  <img src="screenshot.png" alt="Screenshot" width="800">
-</p>
-
----
+![Threads Logo](threads-logo.png)
 
 ## Routes
 
@@ -58,8 +40,6 @@ GET /threads/:userid
 
 Fetches the threads or posts associated with the provided userid.
 
----
-
 ## Installation
 
 1. Clone the repository:
@@ -80,8 +60,6 @@ Fetches the threads or posts associated with the provided userid.
    python app.py
    ```
 
----
-
 ## Usage
 
 Make requests to the API using the provided routes and endpoints.
@@ -94,25 +72,17 @@ GET http://localhost:3000/userid/johndoe
 
 The response will contain the userid associated with the provided username.
 
----
-
 ## Contributing
 
 Contributions are welcome! If you have any improvements or suggestions, feel free to open an issue or submit a pull request.
 
 Please make sure to update tests as appropriate.
 
----
-
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ```
 
-In the above example, you can replace the `threads-logo.png` with the actual Threads logo, and `screenshot.png` with a relevant screenshot of your API or any other visual representation you want to include in the README. Make sure to place the corresponding image files in the same directory as the README file.
-
-Feel free to customize the content, styles, and formatting to your liking. You can also add more sections to provide additional information about the API or include badges, shields, or any other elements to enhance the visual appeal of the README.
-
-Remember to include a license file (`LICENSE`) in the repository if applicable and update the license section in the README accordingly.
+Make sure to replace `threads-logo.png` with the actual Threads logo file and update the relevant sections with your own information before copying it to your README file.
 ```
