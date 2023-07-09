@@ -2,7 +2,8 @@
 
 This is a Flask application that provides several routes for fetching user information and data from the Threads API. The application exposes the following routes:
 
-## Route 1: Fetch userid by username
+<details>
+  <summary>Route 1: Fetch userid by username</summary>
 
 - **Endpoint**: `/userid/<username>`
 - **Method**: GET
@@ -10,9 +11,11 @@ This is a Flask application that provides several routes for fetching user infor
 - **Parameters**:
   - `<username>`: The username of the user.
 - **Response**: Returns a JSON object with the `userid` of the user.
-- **Example**: `http://localhost:3000/userid/johndoe`
+- **Example**: [http://localhost:3000/userid/johndoe](http://localhost:3000/userid/johndoe)
+</details>
 
-## Route 2: Fetch user profile by userid
+<details>
+  <summary>Route 2: Fetch user profile by userid</summary>
 
 - **Endpoint**: `/userprofile/<userid>`
 - **Method**: GET
@@ -20,9 +23,11 @@ This is a Flask application that provides several routes for fetching user infor
 - **Parameters**:
   - `<userid>`: The ID of the user.
 - **Response**: Returns the user profile data as a JSON object.
-- **Example**: `http://localhost:3000/userprofile/12345`
+- **Example**: [http://localhost:3000/userprofile/12345](http://localhost:3000/userprofile/12345)
+</details>
 
-## Route 3: Fetch threads or posts of userid
+<details>
+  <summary>Route 3: Fetch threads or posts of userid</summary>
 
 - **Endpoint**: `/threads/<userid>`
 - **Method**: GET
@@ -30,7 +35,8 @@ This is a Flask application that provides several routes for fetching user infor
 - **Parameters**:
   - `<userid>`: The ID of the user.
 - **Response**: Returns the threads or posts data as a JSON object.
-- **Example**: `http://localhost:3000/threads/12345`
+- **Example**: [http://localhost:3000/threads/12345](http://localhost:3000/threads/12345)
+</details>
 
 ## How to Run
 
@@ -45,7 +51,7 @@ This is a Flask application that provides several routes for fetching user infor
    ```
    python app.py
    ```
-6. The server will start running on `http://localhost:3000`.
+6. The server will start running on [http://localhost:3000](http://localhost:3000).
 
 Note: You can change the `port` variable in the code to use a different port if needed.
 
@@ -63,4 +69,4 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
+You should have received a copy of the GNU General Public License along with this program. If not, see [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
