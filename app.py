@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 # Route 1: Fetch userid by username
 
-
 @app.route("/userid/<username>", methods=["GET"])
 def get_userid(username):
     try:
